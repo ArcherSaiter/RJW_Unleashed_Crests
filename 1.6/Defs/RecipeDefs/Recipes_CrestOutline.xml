@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RecipeDef ParentName="InstallCrestBase">
+		<defName>InstallCrestOutline_Incubation</defName>
+		<label>Draw crest of incubation</label>
+		<description>Draw a crest of incubation onto the pubic region.</description>
+		<descriptionHyperlinks>
+			<HediffDef>AppliedCrestOutline_Incubation</HediffDef>
+		</descriptionHyperlinks>
+		<addsHediff>AppliedCrestOutline_Incubation</addsHediff>
+	</RecipeDef>
+
+	<!-- Outline-only Crest Removal -->
+	<RecipeDef ParentName="RemoveCrestBase">
+		<defName>RemoveCrest_Outline</defName>
+		<label>Erase crest outline only</label>
+		<description>Erases any crest outline from the pubic region.</description>
+		<descriptionHyperlinks>
+			<HediffDef>AppliedCrestOutline_Incubation</HediffDef>
+		</descriptionHyperlinks>
+		<workerClass>RJW_Unleashed_Crests.Recipe_RemoveCrestOutline</workerClass>
+	</RecipeDef>
+
+</Defs>

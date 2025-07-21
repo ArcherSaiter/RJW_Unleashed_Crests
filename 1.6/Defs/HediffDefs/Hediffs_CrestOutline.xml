@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<HediffDef ParentName="CrestBase">
+		<defName>AppliedCrestOutline_Incubation</defName>
+		<label>Crest of Incubation</label>
+		<hediffClass>HediffWithComps</hediffClass>
+		<isBad>false</isBad>
+		<initialSeverity>0.5</initialSeverity>
+		<maxSeverity>1.0</maxSeverity>
+		<description>A crest of incubation, makes the carrier's desire extremely high and only satisfiable by getting pregnant, no matter with what. Humans, hybrids, eggs, mech implants - anything goes.</description>
+		<defaultLabelColor>(255, 105, 180)</defaultLabelColor>
+		<descriptionHyperlinks>
+			<RecipeDef>InstallCrestOutline_Incubation</RecipeDef>
+		</descriptionHyperlinks>
+		<comps>
+			<li Class="HediffSearcher.HediffCompProperties_SearchForHediffs">
+				<checkInterval>300</checkInterval>
+				<severitySetOnTrue>0.1</severitySetOnTrue>
+				<severitySetOnFalse>0.5</severitySetOnFalse>
+				<targetHediffDefNames>
+					<li>RJW_UnknownEgg</li>
+					<li>RJW_InsectHiveEgg</li>
+					<li>RJW_MechanoidImplant</li>
+					<li>RJW_pregnancy</li>
+					<li>RJW_pregnancy_beast</li>
+					<li>RJW_pregnancy_mech</li>
+					<li>PregnantHuman</li>
+				</targetHediffDefNames>
+			</li>
+		</comps>
+		<stages>
+		<li>
+			<minSeverity>0</minSeverity>
+			<label>gestation (calm)</label>
+			<statOffsets>
+				<SexFrequency>-5</SexFrequency>
+				<SexSatisfaction>1</SexSatisfaction>
+			</statOffsets>
+		</li>
+		<li>
+			<minSeverity>0.5</minSeverity>
+			<label>unfertilised (desperate)</label>
+			<statOffsets>
+				<SexFrequency>5</SexFrequency>
+				<SexSatisfaction>-1</SexSatisfaction>
+			</statOffsets>
+		</li>
+		<li>
+			<minSeverity>1</minSeverity>
+			<label>sterile (furious)</label>
+			<statOffsets>
+				<SexSatisfaction>-2</SexSatisfaction>
+			</statOffsets>
+			<socialFightChanceFactor>5</socialFightChanceFactor>
+		</li>
+		</stages>
+	</HediffDef>
+  
+</Defs>

@@ -1,0 +1,172 @@
+<Defs>
+
+	<!-- Base Install Crest Recipe -->
+	<RecipeDef Name="InstallCrestBase" Abstract="True">
+		<workerClass>RJW_Unleashed_Crests.Recipe_InstallCrestBase</workerClass>
+		<anesthetize>false</anesthetize>
+		<hideBodyPartNames>true</hideBodyPartNames>
+		<jobString>Drawing a crest.</jobString>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<workSkill>Artistic</workSkill>
+		<workSkillLearnFactor>1</workSkillLearnFactor>
+		<workAmount>800</workAmount>
+		<recipeUsers>
+			<li>Human</li>
+		</recipeUsers>
+		<skillRequirements>
+			<Artistic>2</Artistic>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Dye</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<appliedOnFixedBodyParts>
+			<li>Torso</li>
+		</appliedOnFixedBodyParts>
+	</RecipeDef>
+
+	<!-- Crest of Lust -->
+	<RecipeDef ParentName="InstallCrestBase">
+		<defName>InstallCrestBase_Lust</defName>
+		<label>Draw crest of Lust</label>
+		<description>Draw a crest of lust onto the pubic region.</description>
+		<descriptionHyperlinks>
+			<HediffDef>AppliedCrestBase_Lust</HediffDef>
+		</descriptionHyperlinks>
+		<addsHediff>AppliedCrestBase_Lust</addsHediff>
+	</RecipeDef>
+
+	<!-- Crest of Fertility -->
+	<RecipeDef ParentName="InstallCrestBase">
+		<defName>InstallCrestBase_Fertility</defName>
+		<label>Draw crest of Fertility</label>
+		<description>Draw a crest of fertility onto the pubic region.</description>
+		<descriptionHyperlinks>
+			<HediffDef>AppliedCrestBase_Fertility</HediffDef>
+		</descriptionHyperlinks>
+		<addsHediff>AppliedCrestBase_Fertility</addsHediff>
+	</RecipeDef>
+
+	<!-- Crest of Allure -->
+	<RecipeDef ParentName="InstallCrestBase">
+		<defName>InstallCrestBase_Allure</defName>
+		<label>Draw crest of Allure</label>
+		<description>Draw a crest of allure onto the pubic region.</description>
+		<descriptionHyperlinks>
+			<HediffDef>AppliedCrestBase_Allure</HediffDef>
+		</descriptionHyperlinks>
+		<addsHediff>AppliedCrestBase_Allure</addsHediff>
+	</RecipeDef>
+
+	<!-- Crest of Strength -->
+	<RecipeDef ParentName="InstallCrestBase">
+		<defName>InstallCrestBase_Strength</defName>
+		<label>Draw crest of Strength</label>
+		<description>Draw a crest of strength onto the pubic region.</description>
+		<descriptionHyperlinks>
+			<HediffDef>AppliedCrestBase_Strength</HediffDef>
+		</descriptionHyperlinks>
+		<addsHediff>AppliedCrestBase_Strength</addsHediff>
+		<!--<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>50</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Gold</li>
+					</thingDefs>
+				</filter>
+				<count>150</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Silver</li>
+					</thingDefs>
+				</filter>
+				<count>150</count>
+			</li>
+		</ingredients>-->
+	</RecipeDef>
+
+	<!-- Crest of Pain -->
+	<RecipeDef ParentName="InstallCrestBase">
+		<defName>InstallCrestBase_Pain</defName>
+		<label>Draw crest of Pain</label>
+		<description>Draw a crest of pain onto the pubic region.</description>
+		<descriptionHyperlinks>
+			<HediffDef>AppliedCrestBase_Pain</HediffDef>
+		</descriptionHyperlinks>
+		<addsHediff>AppliedCrestBase_Pain</addsHediff>
+	</RecipeDef>
+
+	<!-- Crest of Erudite -->
+	<RecipeDef ParentName="InstallCrestBase">
+		<defName>InstallCrestBase_Erudition</defName>
+		<label>Draw crest of Erudition</label>
+		<description>Draw a crest of erudition onto the pubic region.</description>
+		<descriptionHyperlinks>
+			<HediffDef>AppliedCrestBase_Erudition</HediffDef>
+		</descriptionHyperlinks>
+			<addsHediff>AppliedCrestBase_Erudition</addsHediff>
+		</RecipeDef>
+
+	<!-- Crest of Incapacitation -->
+	<RecipeDef ParentName="InstallCrestBase">
+		<defName>InstallCrestBase_Incapacitation</defName>
+		<label>Draw crest of Incapacitation</label>
+		<description>Draw a crest of incapacitation onto the pubic region.</description>
+		<descriptionHyperlinks>
+			<HediffDef>AppliedCrestBase_Incapacitation</HediffDef>
+		</descriptionHyperlinks>
+		<addsHediff>AppliedCrestBase_Incapacitation</addsHediff>
+	</RecipeDef>
+
+
+	<!-- Removing Crest Def Base -->
+	<RecipeDef Name="RemoveCrestBase" Abstract="True">
+		<workerClass>RJW_Unleashed_Crests.Recipe_RemoveEntireCrest</workerClass>
+		<anesthetize>false</anesthetize>
+		<hideBodyPartNames>true</hideBodyPartNames>
+		<jobString>Erasing crest completely.</jobString>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<workSkillLearnFactor>1</workSkillLearnFactor>
+		<workAmount>200</workAmount>
+		<recipeUsers>
+			<li>Human</li>
+		</recipeUsers>
+		<appliedOnFixedBodyParts>
+			<li>Torso</li>
+		</appliedOnFixedBodyParts>
+	</RecipeDef>
+
+	<!-- Universal Crest Removal -->
+	<RecipeDef ParentName="RemoveCrestBase">
+		<defName>RemoveCrest_All</defName>
+		<label>Erase any crest entirely</label>
+		<description>Erases any crest from the pubic region.</description>
+		<descriptionHyperlinks>
+			<HediffDef>AppliedCrestBase_Lust</HediffDef>
+			<HediffDef>AppliedCrestBase_Fertility</HediffDef>
+			<HediffDef>AppliedCrestBase_Allure</HediffDef>
+			<HediffDef>AppliedCrestBase_Strength</HediffDef>
+			<HediffDef>AppliedCrestBase_Pain</HediffDef>
+			<HediffDef>AppliedCrestBase_Erudition</HediffDef>
+			<HediffDef>AppliedCrestBase_Incapacitation</HediffDef>
+		</descriptionHyperlinks>
+		<workerClass>RJW_Unleashed_Crests.Recipe_RemoveEntireCrest</workerClass>
+	</RecipeDef>
+	
+</Defs>

@@ -1,0 +1,152 @@
+﻿<Defs>
+    <!-- Base abstract for Crests -->
+    <HediffDef Name="CrestBase" Abstract="True">
+        <hediffClass>HediffWithComps</hediffClass>
+        <isBad>false</isBad>
+        <description>A crest drawn on the pubic region.</description>
+    </HediffDef>
+
+    <!-- Crest of Lust -->
+    <HediffDef ParentName="CrestBase">
+        <defName>AppliedCrestBase_Lust</defName>
+        <label>Crest of Lust</label>
+        <description>A crest of lust, makes the carrier be driven by lust, requiring almost nothing but sex.</description>
+        <defaultLabelColor>(255, 105, 180)</defaultLabelColor>
+        <descriptionHyperlinks>
+            <RecipeDef>InstallCrestBase_Lust</RecipeDef>
+        </descriptionHyperlinks>
+        <stages>
+            <li>
+                <hungerRateFactorOffset>-0.75</hungerRateFactorOffset>
+                <statOffsets>
+                    <SexFrequency>10</SexFrequency>
+                </statOffsets>
+				<statFactors>
+					<RestFallRateFactor>0.5</RestFallRateFactor>
+					<JoyFallRateFactor>0.5</JoyFallRateFactor>
+                </statFactors>
+            </li>
+        </stages>
+    </HediffDef>
+
+	<!-- Crest of Fertility -->
+    <HediffDef ParentName="CrestBase">
+        <defName>AppliedCrestBase_Fertility</defName>
+        <label>Crest of Fertility</label>
+        <description>A crest of fertility, makes the carrier much more likely to successfully procreate.</description>
+        <defaultLabelColor>(0, 255, 255)</defaultLabelColor>
+        <descriptionHyperlinks>
+            <RecipeDef>InstallCrestBase_Fertility</RecipeDef>
+        </descriptionHyperlinks>
+        <stages>
+            <li>
+                <capMods>
+                    <li>
+                        <capacity>RJW_Fertility</capacity>
+                        <postFactor>2</postFactor>
+                    </li>
+                </capMods>
+            </li>
+        </stages>
+    </HediffDef>
+
+	<!-- Crest of Allure -->
+    <HediffDef ParentName="CrestBase">
+        <defName>AppliedCrestBase_Allure</defName>
+        <label>Crest of Allure</label>
+        <description>A crest of allure, makes the carrier alluring and vulnerable to sexual attacks.</description>
+        <defaultLabelColor>(255, 0, 0)</defaultLabelColor>
+        <descriptionHyperlinks>
+            <RecipeDef>InstallCrestBase_Allure</RecipeDef>
+        </descriptionHyperlinks>
+        <stages>
+            <li>
+                <statOffsets>
+                    <Vulnerability>5</Vulnerability>
+                    <PawnBeauty>1</PawnBeauty>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+
+	<!-- Crest of Strength -->
+    <HediffDef ParentName="CrestBase">
+        <defName>AppliedCrestBase_Strength</defName>
+        <label>Crest of Strength</label>
+        <description>A crest of strength, makes the carrier physically stronger.</description>
+        <defaultLabelColor>(255, 0, 0)</defaultLabelColor>
+        <descriptionHyperlinks>
+            <RecipeDef>InstallCrestBase_Strength</RecipeDef>
+        </descriptionHyperlinks>
+        <stages>
+            <li>
+                <statFactors>
+                    <VEF_MeleeAttackDamageFactor MayRequire="oskarpotocki.vanillafactionsexpanded.core">1.1</VEF_MeleeAttackDamageFactor>
+                    <CarryingCapacity>1.25</CarryingCapacity>
+					<VEF_MassCarryCapacity MayRequire="oskarpotocki.vanillafactionsexpanded.core">1.25</VEF_MassCarryCapacity>
+					<CarryWeight MayRequire="ceteam.combatextended">1.25</CarryWeight>
+					<CarryBulk MayRequire="ceteam.combatextended">1.25</CarryBulk>
+                </statFactors>
+            </li>
+        </stages>
+    </HediffDef>
+	
+	<!-- Crest of Pain -->
+	<HediffDef ParentName="CrestBase">
+		<defName>AppliedCrestBase_Pain</defName>
+		<label>Crest of Pain</label>
+		<description>A crest of pain, makes the carrier more resistant to pain, but also causes a bit of pain constantly. A masochist's dream come true.</description>
+		<defaultLabelColor>(128, 0, 128)</defaultLabelColor>
+		<descriptionHyperlinks>
+			<RecipeDef>InstallCrestBase_Pain</RecipeDef>
+		</descriptionHyperlinks>
+		<stages>
+			<li>
+				<painOffset>0.2</painOffset>
+				<painFactor>0.5</painFactor>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<!-- Crest of Erudite -->
+	<HediffDef ParentName="CrestBase">
+		<defName>AppliedCrestBase_Erudition</defName>
+		<label>Crest of Erudition</label>
+		<description>A crest of erudition, makes the carrier learn faster and more socially intellegent.</description>
+		<defaultLabelColor>(0, 255, 0)</defaultLabelColor>
+		<descriptionHyperlinks>
+			<RecipeDef>InstallCrestBase_Erudition</RecipeDef>
+		</descriptionHyperlinks>
+		<stages>
+			<li>
+				<statOffsets>
+					<SocialImpact>1</SocialImpact>
+					<GlobalLearningFactor>0.25</GlobalLearningFactor>
+					<LearningRateFactor>0.25</LearningRateFactor>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<!-- Crest of Incapacitation -->
+	<HediffDef ParentName="CrestBase">
+		<defName>AppliedCrestBase_Incapacitation</defName>
+		<label>Crest of Incapacitation</label>
+		<description>A crest of incapacitation, makes the carrier fall into a deep sleep until removed.</description>
+		<defaultLabelColor>(0, 0, 255)</defaultLabelColor>
+		<descriptionHyperlinks>
+			<RecipeDef>InstallCrestBase_Incapacitation</RecipeDef>
+		</descriptionHyperlinks>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<setMax>0.1</setMax>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+
+</Defs>
