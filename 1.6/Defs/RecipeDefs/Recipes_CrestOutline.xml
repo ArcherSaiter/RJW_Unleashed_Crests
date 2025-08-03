@@ -1,18 +1,66 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<RecipeDef ParentName="InstallCrestBase">
+	<!-- Base Install Crest Outline Recipe -->
+	<RecipeDef Name="InstallCrestOutline" Abstract="True">
+		<workerClass>RJW_Unleashed_Crests.Recipe_InstallCrestOutline</workerClass>
+		<anesthetize>false</anesthetize>
+		<hideBodyPartNames>true</hideBodyPartNames>
+		<jobString>Drawing a crest outline.</jobString>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<workSkill>Artistic</workSkill>
+		<workSkillLearnFactor>1</workSkillLearnFactor>
+		<workAmount>800</workAmount>
+		<recipeUsers>
+			<li>Human</li>
+		</recipeUsers>
+		<skillRequirements>
+			<Artistic>2</Artistic>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Dye</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<appliedOnFixedBodyParts>
+			<li>Torso</li>
+		</appliedOnFixedBodyParts>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="InstallCrestOutline">
 		<defName>InstallCrestOutline_Incubation</defName>
-		<label>Draw crest of incubation</label>
-		<description>Draw a crest of incubation onto the pubic region.</description>
+		<label>Draw crest outline of Incubation</label>
+		<description>Draw a crest outline of incubation onto the pubic region.</description>
 		<descriptionHyperlinks>
 			<HediffDef>AppliedCrestOutline_Incubation</HediffDef>
 		</descriptionHyperlinks>
 		<addsHediff>AppliedCrestOutline_Incubation</addsHediff>
 	</RecipeDef>
 
+	<!-- Removing Crest Outline Def Base -->
+	<RecipeDef Name="RemoveCrestOutline" Abstract="True">
+		<workerClass>RJW_Unleashed_Crests.Recipe_RemoveCrestOutline</workerClass>
+		<anesthetize>false</anesthetize>
+		<hideBodyPartNames>true</hideBodyPartNames>
+		<jobString>Erasing crest outline.</jobString>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<workSkillLearnFactor>1</workSkillLearnFactor>
+		<workAmount>200</workAmount>
+		<recipeUsers>
+			<li>Human</li>
+		</recipeUsers>
+		<appliedOnFixedBodyParts>
+			<li>Torso</li>
+		</appliedOnFixedBodyParts>
+	</RecipeDef>
+	
 	<!-- Outline-only Crest Removal -->
-	<RecipeDef ParentName="RemoveCrestBase">
+	<RecipeDef ParentName="RemoveCrestOutline">
 		<defName>RemoveCrest_Outline</defName>
 		<label>Erase crest outline only</label>
 		<description>Erases any crest outline from the pubic region.</description>
