@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Crest of Allure -->
+  <AppliedCrestBase_Allure.label>魅惑淫纹</AppliedCrestBase_Allure.label>
+  <!-- EN: A crest of allure, makes the carrier alluring and vulnerable to sexual attacks. -->
+  <AppliedCrestBase_Allure.description>一种用以魅惑的淫纹，使载体更加富有性吸引力，但也更容易遭到性侵犯。</AppliedCrestBase_Allure.description>
+  
+  <!-- EN: Crest of Erudition -->
+  <AppliedCrestBase_Erudition.label>博学淫纹</AppliedCrestBase_Erudition.label>
+  <!-- EN: A crest of erudition, makes the carrier learn faster and more socially intellegent. -->
+  <AppliedCrestBase_Erudition.description>一种促进学习的淫纹，使载体学习更快，更具社交智慧。</AppliedCrestBase_Erudition.description>
+  
+  <!-- EN: Crest of Fertility -->
+  <AppliedCrestBase_Fertility.label>繁育淫纹</AppliedCrestBase_Fertility.label>
+  <!-- EN: A crest of fertility, makes the carrier much more likely to successfully procreate. -->
+  <AppliedCrestBase_Fertility.description>一种激发生育力的淫纹，使该载体成功繁衍后代的可能性大大提高。</AppliedCrestBase_Fertility.description>
+  
+  <!-- EN: Crest of Incapacitation -->
+  <AppliedCrestBase_Incapacitation.label>压制淫纹</AppliedCrestBase_Incapacitation.label>
+  <!-- EN: A crest of incapacitation, makes the carrier fall into a deep sleep until removed. -->
+  <AppliedCrestBase_Incapacitation.description>一种用于压制行动力的淫纹，会使载体陷入深深的沉睡直到淫纹被移除。</AppliedCrestBase_Incapacitation.description>
+  
+  <!-- EN: Crest of Lust -->
+  <AppliedCrestBase_Lust.label>欲望淫纹</AppliedCrestBase_Lust.label>
+  <!-- EN: A crest of lust, makes the carrier be driven by lust, requiring almost nothing but sex. -->
+  <AppliedCrestBase_Lust.description>一种刺激欲望的淫纹，载体将被欲望驱使，几乎只渴求性。</AppliedCrestBase_Lust.description>
+  
+  <!-- EN: Crest of Pain -->
+  <AppliedCrestBase_Pain.label>苦痛淫纹</AppliedCrestBase_Pain.label>
+  <!-- EN: A crest of pain, makes the carrier more resistant to pain, but also causes a bit of pain constantly. A masochist's dream come true. -->
+  <AppliedCrestBase_Pain.description>给予痛苦的淫纹，使载体拥有更强的疼痛忍耐力，但淫纹会持续的释放痛感。对受虐狂来说简直是梦想成真。</AppliedCrestBase_Pain.description>
+  
+  <!-- EN: Crest of Strength -->
+  <AppliedCrestBase_Strength.label>力量淫纹</AppliedCrestBase_Strength.label>
+  <!-- EN: A crest of strength, makes the carrier physically stronger. -->
+  <AppliedCrestBase_Strength.description>一种旨在挖掘潜力的淫纹，使载体拥有更强的力量。</AppliedCrestBase_Strength.description>
+  
+</LanguageData>

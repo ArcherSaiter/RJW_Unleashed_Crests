@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Crest of Incubation -->
+  <AppliedCrestOutline_Incubation.label>孕之淫纹</AppliedCrestOutline_Incubation.label>
+  <!-- EN: A crest of incubation, makes the carrier's desire extremely high and only satisfiable by getting pregnant, no matter with what. Humans, hybrids, eggs, mech implants - anything goes. -->
+  <AppliedCrestOutline_Incubation.description>一种旨在放大生育本能的淫纹，使载体产生极度强烈的渴望，唯有怀孕才能满足，无论对象为何。人类、混种、卵、机械体——任何能让其怀孕的东西都行。</AppliedCrestOutline_Incubation.description>
+  <!-- EN: gestation (calm) -->
+  <AppliedCrestOutline_Incubation.stages.gestation_calm.label>妊娠（平静）</AppliedCrestOutline_Incubation.stages.gestation_calm.label>
+  <!-- EN: unfertilised (desperate) -->
+  <AppliedCrestOutline_Incubation.stages.unfertilised_desperate.label>未受精（绝望）</AppliedCrestOutline_Incubation.stages.unfertilised_desperate.label>
+  <!-- EN: sterile (furious) -->
+  <AppliedCrestOutline_Incubation.stages.sterile_furious.label>无生育力（愤怒）</AppliedCrestOutline_Incubation.stages.sterile_furious.label>
+  
+</LanguageData>

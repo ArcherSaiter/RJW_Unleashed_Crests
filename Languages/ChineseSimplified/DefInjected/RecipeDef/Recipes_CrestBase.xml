@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Draw crest of Allure -->
+  <InstallCrestBase_Allure.label>绘制魅惑淫纹</InstallCrestBase_Allure.label>
+  <!-- EN: Draw a crest of allure onto the pubic region. -->
+  <InstallCrestBase_Allure.description>在耻骨区域绘制一抹魅惑的纹饰。</InstallCrestBase_Allure.description>
+  <!-- EN: Drawing a crest. -->
+  <InstallCrestBase_Allure.jobString>绘制淫纹</InstallCrestBase_Allure.jobString>
+  
+  <!-- EN: Draw crest of Erudition -->
+  <InstallCrestBase_Erudition.label>绘制博学淫纹</InstallCrestBase_Erudition.label>
+  <!-- EN: Draw a crest of erudition onto the pubic region. -->
+  <InstallCrestBase_Erudition.description>在耻骨区域绘制博学淫纹。</InstallCrestBase_Erudition.description>
+  <!-- EN: Drawing a crest. -->
+  <InstallCrestBase_Erudition.jobString>绘制淫纹</InstallCrestBase_Erudition.jobString>
+  
+  <!-- EN: Draw crest of Fertility -->
+  <InstallCrestBase_Fertility.label>绘制繁育淫纹</InstallCrestBase_Fertility.label>
+  <!-- EN: Draw a crest of fertility onto the pubic region. -->
+  <InstallCrestBase_Fertility.description>在耻骨区域绘制繁育淫纹。</InstallCrestBase_Fertility.description>
+  <!-- EN: Drawing a crest. -->
+  <InstallCrestBase_Fertility.jobString>绘制淫纹</InstallCrestBase_Fertility.jobString>
+  
+  <!-- EN: Draw crest of Incapacitation -->
+  <InstallCrestBase_Incapacitation.label>绘制压制淫纹</InstallCrestBase_Incapacitation.label>
+  <!-- EN: Draw a crest of incapacitation onto the pubic region. -->
+  <InstallCrestBase_Incapacitation.description>在耻骨区域绘制压制淫纹。</InstallCrestBase_Incapacitation.description>
+  <!-- EN: Drawing a crest. -->
+  <InstallCrestBase_Incapacitation.jobString>绘制淫纹</InstallCrestBase_Incapacitation.jobString>
+  
+  <!-- EN: Draw crest of Lust -->
+  <InstallCrestBase_Lust.label>绘制欲望淫纹</InstallCrestBase_Lust.label>
+  <!-- EN: Draw a crest of lust onto the pubic region. -->
+  <InstallCrestBase_Lust.description>在耻骨区域绘制欲望淫纹。</InstallCrestBase_Lust.description>
+  <!-- EN: Drawing a crest. -->
+  <InstallCrestBase_Lust.jobString>绘制淫纹</InstallCrestBase_Lust.jobString>
+  
+  <!-- EN: Draw crest of Pain -->
+  <InstallCrestBase_Pain.label>苦痛淫纹</InstallCrestBase_Pain.label>
+  <!-- EN: Draw a crest of pain onto the pubic region. -->
+  <InstallCrestBase_Pain.description>在耻骨区域绘制苦痛淫纹。</InstallCrestBase_Pain.description>
+  <!-- EN: Drawing a crest. -->
+  <InstallCrestBase_Pain.jobString>绘制淫纹</InstallCrestBase_Pain.jobString>
+  
+  <!-- EN: Draw crest of Strength -->
+  <InstallCrestBase_Strength.label>绘制力量淫纹</InstallCrestBase_Strength.label>
+  <!-- EN: Draw a crest of strength onto the pubic region. -->
+  <InstallCrestBase_Strength.description>在耻骨区域绘制力量淫纹。</InstallCrestBase_Strength.description>
+  <!-- EN: Drawing a crest. -->
+  <InstallCrestBase_Strength.jobString>绘制淫纹</InstallCrestBase_Strength.jobString>
+  
+  <!-- EN: Erase any crest entirely -->
+  <RemoveCrest_All.label>抹除所有淫纹</RemoveCrest_All.label>
+  <!-- EN: Erases any crest from the pubic region. -->
+  <RemoveCrest_All.description>抹除刻下的所有淫纹。</RemoveCrest_All.description>
+  <!-- EN: Erasing crest completely. -->
+  <RemoveCrest_All.jobString>彻底抹除淫纹</RemoveCrest_All.jobString>
+  
+</LanguageData>

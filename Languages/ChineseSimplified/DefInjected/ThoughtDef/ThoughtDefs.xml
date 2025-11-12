@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: gestating -->
+  <IncubatorSatisfied.stages.gestating.label>妊娠</IncubatorSatisfied.stages.gestating.label>
+  <!-- EN: This is what I should be doing. -->
+  <IncubatorSatisfied.stages.gestating.description>这就是我应当做的。</IncubatorSatisfied.stages.gestating.description>
+  <!-- EN: unfertilised -->
+  <IncubatorSatisfied.stages.unfertilised.label>未受精</IncubatorSatisfied.stages.unfertilised.label>
+  <!-- EN: I feel like I'm not fulfilling my purpose. -->
+  <IncubatorSatisfied.stages.unfertilised.description>我觉得自己没有做到该做的事...</IncubatorSatisfied.stages.unfertilised.description>
+  <!-- EN: sterile -->
+  <IncubatorSatisfied.stages.sterile.label>无生育力</IncubatorSatisfied.stages.sterile.label>
+  <!-- EN: IS THIS A FUCKING JOKE?! -->
+  <IncubatorSatisfied.stages.sterile.description>这他妈的是个什么鬼玩笑啊？！</IncubatorSatisfied.stages.sterile.description>
+  
+</LanguageData>

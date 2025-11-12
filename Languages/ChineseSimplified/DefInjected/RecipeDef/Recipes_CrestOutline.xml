@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Draw crest outline of Incubation -->
+  <InstallCrestOutline_Incubation.label>绘制孕之淫纹</InstallCrestOutline_Incubation.label>
+  <!-- EN: Draw a crest outline of incubation onto the pubic region. -->
+  <InstallCrestOutline_Incubation.description>在耻骨区绘制孕之淫纹。</InstallCrestOutline_Incubation.description>
+  <!-- EN: Drawing a crest outline. -->
+  <InstallCrestOutline_Incubation.jobString>绘制孕之淫纹。</InstallCrestOutline_Incubation.jobString>
+  
+  <!-- EN: Erase crest outline only -->
+  <RemoveCrest_Outline.label>仅移除孕之淫纹</RemoveCrest_Outline.label>
+  <!-- EN: Erases any crest outline from the pubic region. -->
+  <RemoveCrest_Outline.description>仅移除孕之淫纹。</RemoveCrest_Outline.description>
+  <!-- EN: Erasing crest outline. -->
+  <RemoveCrest_Outline.jobString>移除孕之淫纹。</RemoveCrest_Outline.jobString>
+  
+</LanguageData>
