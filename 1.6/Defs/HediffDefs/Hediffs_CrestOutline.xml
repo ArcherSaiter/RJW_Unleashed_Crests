@@ -8,7 +8,7 @@
 		<isBad>false</isBad>
 		<initialSeverity>0.5</initialSeverity>
 		<maxSeverity>1.0</maxSeverity>
-		<description>A crest of incubation, makes the carrier's desire extremely high and only satisfiable by getting pregnant, no matter with what. Humans, hybrids, eggs, mech implants - anything goes.</description>
+		<description>A crest of incubation. It raises the carrier's level of desire to new heights, only satisfiable by getting pregnant. This desire does not discriminate in regards to what is carried. Humans, hybrids, eggs, mech implants - anything will do, to satiate this need.</description>
 		<defaultLabelColor>(255, 105, 180)</defaultLabelColor>
 		<descriptionHyperlinks>
 			<RecipeDef>InstallCrestOutline_Incubation</RecipeDef>
@@ -32,7 +32,7 @@
 		<stages>
 		<li>
 			<minSeverity>0</minSeverity>
-			<label>gestation (calm)</label>
+			<label>gestating (calm)</label>
 			<statOffsets>
 				<SexFrequency>-5</SexFrequency>
 				<SexSatisfaction>1</SexSatisfaction>
@@ -57,4 +57,5 @@
 		</stages>
 	</HediffDef>
   
+
 </Defs>
