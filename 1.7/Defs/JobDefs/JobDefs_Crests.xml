@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<JobDef>
+		<defName>RJWUC_ApplyCrests</defName>
+		<driverClass>RJW_Unleashed_Crests.JobDriver_ApplyCrests</driverClass>
+		<reportString>Applying crests.</reportString>
+	</JobDef>
+
+</Defs>

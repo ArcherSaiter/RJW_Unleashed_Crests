@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<HediffDef ParentName="CrestBase">
+		<defName>AppliedCrestOutline_Incubation</defName>
+		<label>Crest outline of Incubation</label>
+		<hediffClass>HediffWithComps</hediffClass>
+		<initialSeverity>0.5</initialSeverity>
+		<maxSeverity>1.0</maxSeverity>
+		<description>A crest of incubation, makes the carrier's desire extremely high and only satisfiable by getting pregnant, no matter with what. Humans, hybrids, eggs, mech implants - anything goes.</description>
+		<defaultLabelColor>(255, 105, 180)</defaultLabelColor>
+		<descriptionHyperlinks>
+			<RecipeDef>InstallCrestOutline_Incubation</RecipeDef>
+		</descriptionHyperlinks>
+		<comps>
+			<li Class="HediffSearcher.HediffCompProperties_SearchForHediffs">
+				<checkInterval>300</checkInterval>
+				<severitySetOnTrue>0.1</severitySetOnTrue>
+				<severitySetOnFalse>0.5</severitySetOnFalse>
+				<targetHediffDefNames>
+					<li>RJW_UnknownEgg</li>
+					<li>RJW_InsectHiveEgg</li>
+					<li>RJW_MechanoidImplant</li>
+					<li>RJW_pregnancy</li>
+					<li>RJW_pregnancy_beast</li>
+					<li>RJW_pregnancy_mech</li>
+					<li>PregnantHuman</li>
+				</targetHediffDefNames>
+			</li>
+			<!--<li Class="RJW_Unleashed_Crests.HediffCompProperties_ApplyCrestTattoo">
+				<tattooDef>RJWUC_Crest_Tattoo_Outline_Incubation</tattooDef>
+			</li>-->
+		</comps>
+		<stages>
+		<li>
+			<minSeverity>0</minSeverity>
+			<label>gestation (calm)</label>
+			<statOffsets>
+				<SexFrequency>-5</SexFrequency>
+				<SexSatisfaction>1</SexSatisfaction>
+			</statOffsets>
+		</li>
+		<li>
+			<minSeverity>0.5</minSeverity>
+			<label>unfertilised (desperate)</label>
+			<statOffsets>
+				<SexFrequency>5</SexFrequency>
+				<SexSatisfaction>-1</SexSatisfaction>
+			</statOffsets>
+		</li>
+		<li>
+			<minSeverity>1</minSeverity>
+			<label>sterile (furious)</label>
+			<statOffsets>
+				<SexSatisfaction>-2</SexSatisfaction>
+			</statOffsets>
+			<socialFightChanceFactor>5</socialFightChanceFactor>
+		</li>
+		</stages>
+	</HediffDef>
+  
+    <HediffDef ParentName="CrestBase">
+		<defName>AppliedCrestOutline_Debauchery</defName>
+		<label>Crest outline of Debauchery</label>
+		<initialSeverity>1.0</initialSeverity>
+		<description>A crest of debauchery, makes the carrier's behaviour more lecherous and inviting.</description>
+		<defaultLabelColor>(255, 105, 180)</defaultLabelColor>
+		<descriptionHyperlinks>
+			<RecipeDef>InstallCrestOutline_Debauchery</RecipeDef>
+		</descriptionHyperlinks>
+		<comps>
+			<!--<li Class="RJW_Unleashed_Crests.HediffCompProperties_ApplyCrestTattoo">
+				<tattooDef>RJWUC_Crest_Tattoo_Outline_Debauchery</tattooDef>
+			</li>-->
+		</comps>
+		<stages>
+            <li>
+                <statOffsets>
+                    <SexFrequency>1</SexFrequency>
+					<Vulnerability>0.5</Vulnerability>
+                    <PawnBeauty>1</PawnBeauty>
+                </statOffsets>
+            </li>
+        </stages>
+	</HediffDef>
+	
+	<HediffDef ParentName="CrestBase">
+		<defName>AppliedCrestOutline_Vigor</defName>
+		<label>Crest outline of Vigor</label>
+		<hediffClass>HediffWithComps</hediffClass>
+		<initialSeverity>1.0</initialSeverity>
+		<description>A crest of vigor, makes the carrier tireless and unconcerned with mortal limits. The carrier's rest falls much more slowly and their body recovers from being drained near instantly - no matter how much they give, they are always ready for more.</description>
+		<defaultLabelColor>(255, 105, 180)</defaultLabelColor>
+		<descriptionHyperlinks>
+			<RecipeDef>InstallCrestOutline_Vigor</RecipeDef>
+		</descriptionHyperlinks>
+		<comps>
+			<li Class="HediffSearcher.HediffCompProperties_ImmunityToHediffs">
+				<targetHediffDefNames>
+					<li>Cumpilation_Drained</li>
+				</targetHediffDefNames>
+			</li>
+			<!--<li Class="RJW_Unleashed_Crests.HediffCompProperties_ApplyCrestTattoo">
+				<tattooDef>RJWUC_Crest_Tattoo_Outline_Vigor</tattooDef>
+			</li>-->
+		</comps>
+		<stages>
+			<li>
+				<statFactors>
+					<RestFallRateFactor>0.75</RestFallRateFactor>
+				</statFactors>
+				<statOffsets>
+					<SexFrequency>0.5</SexFrequency>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef ParentName="CrestBase">
+		<defName>AppliedCrestOutline_Virility</defName>
+		<label>Crest outline of Virility</label>
+		<hediffClass>HediffWithComps</hediffClass>
+		<initialSeverity>1.0</initialSeverity>
+		<description>A crest of virility, makes the carrier's testicles go into overdrive and overproduce, vastly increasing how much seed they can store and release.</description>
+		<defaultLabelColor>(255, 105, 180)</defaultLabelColor>
+		<descriptionHyperlinks>
+			<RecipeDef>InstallCrestOutline_Virility</RecipeDef>
+		</descriptionHyperlinks>
+		<comps>
+			<li Class="HediffSearcher.HediffCompProperties_CumBoost">
+				<multiplier>3</multiplier>
+				<targetPenis>true</targetPenis>
+				<targetVagina>false</targetVagina>
+				<needsFluid>true</needsFluid>
+			</li>
+			<!--<li Class="RJW_Unleashed_Crests.HediffCompProperties_ApplyCrestTattoo">
+				<tattooDef>RJWUC_Crest_Tattoo_Outline_Virility</tattooDef>
+			</li>-->
+		</comps>
+		<stages>
+			<li>
+				<statOffsets>
+					<SexFrequency>1</SexFrequency>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef ParentName="CrestBase">
+		<defName>AppliedCrestOutline_Breeding</defName>
+		<label>Crest outline of Breeding</label>
+		<initialSeverity>1.0</initialSeverity>
+		<description>A crest of breedeing, makes the carrier's organs adapt to prioritize procreation.</description>
+		<defaultLabelColor>(255, 105, 180)</defaultLabelColor>
+		<descriptionHyperlinks>
+			<RecipeDef>InstallCrestOutline_Breeding</RecipeDef>
+		</descriptionHyperlinks>
+		<comps>
+			<!--<li Class="RJW_Unleashed_Crests.HediffCompProperties_ApplyCrestTattoo">
+				<tattooDef>RJWUC_Crest_Tattoo_Outline_Breeding</tattooDef>
+			</li>-->
+		</comps>
+		<stages>
+            <li>
+				<hungerRateFactorOffset>0.25</hungerRateFactorOffset>
+				<capMods>
+                    <li>
+                        <capacity>RJW_Fertility</capacity>
+                        <postFactor>2.5</postFactor>
+                    </li>
+                </capMods>
+            </li>
+        </stages>
+	</HediffDef>
+  
+</Defs>

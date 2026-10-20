@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+	<ThoughtDef>
+		<defName>IncubatorSatisfied</defName>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>AppliedCrestOutline_Incubation</hediff>
+		<validWhileDespawned>true</validWhileDespawned>
+		<stages>
+		<li>
+			<label>gestating</label>
+			<description>This is what I should be doing.</description>
+			<baseMoodEffect>10</baseMoodEffect>
+		</li>
+		<li>
+			<label>unfertilised</label>
+			<description>I feel like I'm not fulfilling my purpose.</description>
+			<baseMoodEffect>-10</baseMoodEffect>
+		</li>
+		<li>
+			<label>sterile</label>
+			<description>IS THIS A FUCKING JOKE?!</description>
+			<baseMoodEffect>-25</baseMoodEffect>
+		</li>
+		</stages>
+	</ThoughtDef>
+
+</Defs>

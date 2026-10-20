@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+  <TattooDef>
+    <defName>RJWUC_Crest_Tattoo_Base_Lust</defName>
+    <label>Crest of Lust (Tattoo)</label>
+    <texPath>Things/Pawn/Humanlike/Tattoos/RJWUC_Crests/Crest_6/Crest_6</texPath>
+    <tattooType>Body</tattooType>
+    <category>Urban</category>
+    <visibleNorth>true</visibleNorth>
+    <styleTags><li>TattooRJWCrest</li></styleTags>
+  </TattooDef>
+  <TattooDef>
+    <defName>RJWUC_Crest_Tattoo_Base_Fertility</defName>
+    <label>Crest of Fertility (Tattoo)</label>
+    <texPath>Things/Pawn/Humanlike/Tattoos/RJWUC_Crests/Crest_13/Crest_13</texPath>
+    <tattooType>Body</tattooType>
+    <category>Urban</category>
+    <visibleNorth>true</visibleNorth>
+    <styleTags><li>TattooRJWCrest</li></styleTags>
+  </TattooDef>
+  <TattooDef>
+    <defName>RJWUC_Crest_Tattoo_Base_Allure</defName>
+    <label>Crest of Allure (Tattoo)</label>
+    <texPath>Things/Pawn/Humanlike/Tattoos/RJWUC_Crests/Crest_16/Crest_16</texPath>
+    <tattooType>Body</tattooType>
+    <category>Urban</category>
+    <visibleNorth>true</visibleNorth>
+    <styleTags><li>TattooRJWCrest</li></styleTags>
+  </TattooDef>
+  <TattooDef>
+    <defName>RJWUC_Crest_Tattoo_Base_Strength</defName>
+    <label>Crest of Strength (Tattoo)</label>
+    <texPath>Things/Pawn/Humanlike/Tattoos/RJWUC_Crests/Crest_14/Crest_14</texPath>
+    <tattooType>Body</tattooType>
+    <category>Urban</category>
+    <visibleNorth>true</visibleNorth>
+    <styleTags><li>TattooRJWCrest</li></styleTags>
+  </TattooDef>
+  <TattooDef>
+    <defName>RJWUC_Crest_Tattoo_Base_Pain</defName>
+    <label>Crest of Pain (Tattoo)</label>
+    <texPath>Things/Pawn/Humanlike/Tattoos/RJWUC_Crests/Crest_2/Crest_2</texPath>
+    <tattooType>Body</tattooType>
+    <category>Urban</category>
+    <visibleNorth>true</visibleNorth>
+    <styleTags><li>TattooRJWCrest</li></styleTags>
+  </TattooDef>
+  <TattooDef>
+    <defName>RJWUC_Crest_Tattoo_Base_Erudition</defName>
+    <label>Crest of Erudition (Tattoo)</label>
+    <texPath>Things/Pawn/Humanlike/Tattoos/RJWUC_Crests/Crest_9/Crest_9</texPath>
+    <tattooType>Body</tattooType>
+    <category>Urban</category>
+    <visibleNorth>true</visibleNorth>
+    <styleTags><li>TattooRJWCrest</li></styleTags>
+  </TattooDef>
+  <TattooDef>
+    <defName>RJWUC_Crest_Tattoo_Base_Incapacitation</defName>
+    <label>Crest of Incapacitation (Tattoo)</label>
+    <texPath>Things/Pawn/Humanlike/Tattoos/RJWUC_Crests/Crest_18/Crest_18</texPath>
+    <tattooType>Body</tattooType>
+    <category>Urban</category>
+    <visibleNorth>true</visibleNorth>
+    <styleTags><li>TattooRJWCrest</li></styleTags>
+  </TattooDef>
+  <!-- Cosmetic-only tattoos: every crest art that is not used by a base crest hediff.
+       (Outlines 8/10/11/12 are referenced only by the commented-out defs below; the block
+       itself is intentionally left untouched.) -->
+  <TattooDef>
+    <defName>RJWUC_Crest_Tattoo_Spare_1</defName>
+    <label>Crest (Spare) 1</label>
+    <texPath>Things/Pawn/Humanlike/Tattoos/RJWUC_Crests/Crest_1/Crest_1</texPath>
+    <tattooType>Body</tattooType>
+    <category>Urban</category>
+    <visibleNorth>true</visibleNorth>
+    <styleTags><li>TattooRJWCrest</li></styleTags>
+  </TattooDef>
+  <TattooDef>
+    <defName>RJWUC_Crest_Tattoo_Spare_2</defName>
+    <label>Crest (Spare) 2</label>
+    <texPath>Things/Pawn/Humanlike/Tattoos/RJWUC_Crests/Crest_3/Crest_3</texPath>
+    <tattooType>Body</tattooType>
+    <category>Urban</category>
+    <visibleNorth>true</visibleNorth>
+    <styleTags><li>TattooRJWCrest</li></styleTags>
+  </TattooDef>
+  <TattooDef>
+    <defName>RJWUC_Crest_Tattoo_Spare_3</defName>
+    <label>Crest (Spare) 3</label>
+    <texPath>Things/Pawn/Humanlike/Tattoos/RJWUC_Crests/Crest_4/Crest_4</texPath>
+    <tattooType>Body</tattooType>
+    <category>Urban</category>
+    <visibleNorth>true</visibleNorth>
+    <styleTags><li>TattooRJWCrest</li></styleTags>
+  </TattooDef>
+  <TattooDef>
+    <defName>RJWUC_Crest_Tattoo_Spare_4</defName>
+    <label>Crest (Spare) 4</label>
+    <texPath>Things/Pawn/Humanlike/Tattoos/RJWUC_Crests/Crest_5/Crest_5</texPath>
+    <tattooType>Body</tattooType>
+    <category>Urban</category>
+    <visibleNorth>true</visibleNorth>
+    <styleTags><li>TattooRJWCrest</li></styleTags>
+  </TattooDef>
+  <TattooDef>
+    <defName>RJWUC_Crest_Tattoo_Spare_5</defName>
+    <label>Crest (Spare) 5</label>
+    <texPath>Things/Pawn/Humanlike/Tattoos/RJWUC_Crests/Crest_7/Crest_7</texPath>
+    <tattooType>Body</tattooType>
+    <category>Urban</category>
+    <visibleNorth>true</visibleNorth>
+    <styleTags><li>TattooRJWCrest</li></styleTags>
+  </TattooDef>
+  <TattooDef>
+    <defName>RJWUC_Crest_Tattoo_Spare_6</defName>
+    <label>Crest (Spare) 6</label>
+    <texPath>Things/Pawn/Humanlike/Tattoos/RJWUC_Crests/Crest_15/Crest_15</texPath>
+    <tattooType>Body</tattooType>
+    <category>Urban</category>
+    <visibleNorth>true</visibleNorth>
+    <styleTags><li>TattooRJWCrest</li></styleTags>
+  </TattooDef>
+  <TattooDef>
+    <defName>RJWUC_Crest_Tattoo_Spare_7</defName>
+    <label>Crest (Spare) 7</label>
+    <texPath>Things/Pawn/Humanlike/Tattoos/RJWUC_Crests/Crest_17/Crest_17</texPath>
+    <tattooType>Body</tattooType>
+    <category>Urban</category>
+    <visibleNorth>true</visibleNorth>
+    <styleTags><li>TattooRJWCrest</li></styleTags>
+  </TattooDef>
+  <TattooDef>
+    <defName>RJWUC_Crest_Tattoo_Spare_8</defName>
+    <label>Crest (Spare) 8</label>
+    <texPath>Things/Pawn/Humanlike/Tattoos/RJWUC_Crests/Crest_19/Crest_19</texPath>
+    <tattooType>Body</tattooType>
+    <category>Urban</category>
+    <visibleNorth>true</visibleNorth>
+    <styleTags><li>TattooRJWCrest</li></styleTags>
+  </TattooDef>
+  <TattooDef>
+    <defName>RJWUC_Crest_Tattoo_Spare_9</defName>
+    <label>Crest (Spare) 9</label>
+    <texPath>Things/Pawn/Humanlike/Tattoos/RJWUC_Crests/Crest_20/Crest_20</texPath>
+    <tattooType>Body</tattooType>
+    <category>Urban</category>
+    <visibleNorth>true</visibleNorth>
+    <styleTags><li>TattooRJWCrest</li></styleTags>
+  </TattooDef>
+  <TattooDef>
+    <defName>RJWUC_Crest_Tattoo_Spare_10</defName>
+    <label>Crest (Spare) 10</label>
+    <texPath>Things/Pawn/Humanlike/Tattoos/RJWUC_Crests/Crest_8/Crest_8</texPath>
+    <tattooType>Body</tattooType>
+    <category>Urban</category>
+    <visibleNorth>true</visibleNorth>
+    <styleTags><li>TattooRJWCrest</li></styleTags>
+  </TattooDef>
+  <TattooDef>
+    <defName>RJWUC_Crest_Tattoo_Spare_11</defName>
+    <label>Crest (Spare) 11</label>
+    <texPath>Things/Pawn/Humanlike/Tattoos/RJWUC_Crests/Crest_10/Crest_10</texPath>
+    <tattooType>Body</tattooType>
+    <category>Urban</category>
+    <visibleNorth>true</visibleNorth>
+    <styleTags><li>TattooRJWCrest</li></styleTags>
+  </TattooDef>
+  <TattooDef>
+    <defName>RJWUC_Crest_Tattoo_Spare_12</defName>
+    <label>Crest (Spare) 12</label>
+    <texPath>Things/Pawn/Humanlike/Tattoos/RJWUC_Crests/Crest_11/Crest_11</texPath>
+    <tattooType>Body</tattooType>
+    <category>Urban</category>
+    <visibleNorth>true</visibleNorth>
+    <styleTags><li>TattooRJWCrest</li></styleTags>
+  </TattooDef>
+  <TattooDef>
+    <defName>RJWUC_Crest_Tattoo_Spare_13</defName>
+    <label>Crest (Spare) 13</label>
+    <texPath>Things/Pawn/Humanlike/Tattoos/RJWUC_Crests/Crest_12/Crest_12</texPath>
+    <tattooType>Body</tattooType>
+    <category>Urban</category>
+    <visibleNorth>true</visibleNorth>
+    <styleTags><li>TattooRJWCrest</li></styleTags>
+  </TattooDef>
+  <!--<TattooDef>
+    <defName>RJWUC_Crest_Tattoo_Outline_Incubation</defName>
+    <label>Crest outline of Incubation (Tattoo)</label>
+    <texPath>Things/Pawn/Humanlike/Tattoos/RJWUC_Crests/Crest_8/Crest_8</texPath>
+    <tattooType>Body</tattooType>
+    <category>Urban</category>
+    <visibleNorth>true</visibleNorth>
+    <styleTags><li>TattooRJWCrest</li></styleTags>
+  </TattooDef>
+  <TattooDef>
+    <defName>RJWUC_Crest_Tattoo_Outline_Debauchery</defName>
+    <label>Crest outline of Debauchery (Tattoo)</label>
+    <texPath>Things/Pawn/Humanlike/Tattoos/RJWUC_Crests/Crest_9/Crest_9</texPath>
+    <tattooType>Body</tattooType>
+    <category>Urban</category>
+    <visibleNorth>true</visibleNorth>
+    <styleTags><li>TattooRJWCrest</li></styleTags>
+  </TattooDef>
+  <TattooDef>
+    <defName>RJWUC_Crest_Tattoo_Outline_Vigor</defName>
+    <label>Crest outline of Vigor (Tattoo)</label>
+    <texPath>Things/Pawn/Humanlike/Tattoos/RJWUC_Crests/Crest_10/Crest_10</texPath>
+    <tattooType>Body</tattooType>
+    <category>Urban</category>
+    <visibleNorth>true</visibleNorth>
+    <styleTags><li>TattooRJWCrest</li></styleTags>
+  </TattooDef>
+  <TattooDef>
+    <defName>RJWUC_Crest_Tattoo_Outline_Virility</defName>
+    <label>Crest outline of Virility (Tattoo)</label>
+    <texPath>Things/Pawn/Humanlike/Tattoos/RJWUC_Crests/Crest_11/Crest_11</texPath>
+    <tattooType>Body</tattooType>
+    <category>Urban</category>
+    <visibleNorth>true</visibleNorth>
+    <styleTags><li>TattooRJWCrest</li></styleTags>
+  </TattooDef>
+  <TattooDef>
+    <defName>RJWUC_Crest_Tattoo_Outline_Breeding</defName>
+    <label>Crest outline of Breeding (Tattoo)</label>
+    <texPath>Things/Pawn/Humanlike/Tattoos/RJWUC_Crests/Crest_12/Crest_12</texPath>
+    <tattooType>Body</tattooType>
+    <category>Urban</category>
+    <visibleNorth>true</visibleNorth>
+    <styleTags><li>TattooRJWCrest</li></styleTags>
+  </TattooDef>-->
+</Defs>

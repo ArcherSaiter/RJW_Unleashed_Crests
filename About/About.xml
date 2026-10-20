@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
 	<name>RJW_Unleashed_Crests</name>
-	<author>ArcherSaiter, Euclidean, Nil</author>
-	<!--<url></url>-->
+	<author>ArcherSaiter</author>
+	<modVersion>2.0</modVersion>
+	<url>https://github.com/ArcherSaiter/RJW_Unleashed_Crests</url>
 	<supportedVersions>
 		<li>1.4</li>
 		<li>1.5</li>
 		<li>1.6</li>
+		<li>1.7</li>
 	</supportedVersions>
 	<packageId>archersaiter.rjw.unleashed.crests</packageId>
 	<description>Womb crests/tattoos than can be drawn onto pawns for special effects.
@@ -19,8 +21,15 @@
 			<displayName>RimJobWorld</displayName>
 			<downloadUrl>https://www.loverslab.com/files/file/7257-rimjobworld/</downloadUrl>
 		</li>
+		<li>
+			<packageId>Ludeon.RimWorld.Ideology</packageId>
+			<displayName>Ideology</displayName>
+		</li>
 	</modDependencies>
 	<loadAfter>
 		<li>rim.job.world</li>
+		<li>rjw.unleashed.framework</li>
+		<li>vegapnk.cumpilation</li>
+		<li>Ludeon.RimWorld.Ideology</li>
 	</loadAfter>
 </ModMetaData>
