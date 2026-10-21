@@ -25,6 +25,11 @@
 			<packageId>Ludeon.RimWorld.Ideology</packageId>
 			<displayName>Ideology</displayName>
 		</li>
+		<li>
+          <packageId>OskarPotocki.VanillaFactionsExpanded.Core</packageId>
+          <displayName>Vanilla Expanded Framework</displayName>
+          <downloadUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2023507013</downloadUrl>
+		</li>
 	</modDependencies>
 	<loadAfter>
 		<li>rim.job.world</li>

@@ -1,91 +1,81 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
-  <!-- Crest tattoos carry the unique TattooRJWCrest style tag. Every ideoligon must "want"
-       it, otherwise IdeoStyleTracker gives it StyleItemFrequency.Never -> HasUnwantedBodyTattoo
-       -> LookChangeDesired (-2 mood) + an auto-restyle that overwrites the crest.
 
-       IMPORTANT: StyleItemTagWeighted.TotalWeight = baseWeight * weightFactor, and weightFactor
-       has no default (it is 0 unless written). Omitting <weightFactor> makes TotalWeight 0 ->
-       Never. So <weightFactor>1</weightFactor> is REQUIRED. baseWeight 0.01 gives TotalWeight
-       0.01 -> Rare (non-Never: no penalty, still listed in the styling station).
-
-       Purely additive. Four operations, because a single PatchOperationConditional cannot fan
-       out per-def:
-         Sequence [ Test success=Invert ; Insert order=Append ]  -> list exists: add our <li>
-                                                                   as a sibling after the last
-                                                                   <li>, skipped when our tag
-                                                                   is already present
-         Add success=Always on [not(styleItemTags)]              -> no list: create the whole
-                                                                   <styleItemTags>
-       Nothing is ever removed, so tags added by other mods are preserved. -->
-
-  <Operation Class="PatchOperationSequence">
-    <success>Always</success>
+  <Operation Class="VEF.PatchOperationToggableSequence">
+    <enabled>True</enabled>
+    <label>RJW Crests: enforce spawn of cosmetic crests</label>
     <operations>
-      <li Class="PatchOperationTest">
-        <success>Invert</success>
-        <xpath>Defs/CultureDef/styleItemTags/li[tag='TattooRJWCrest']</xpath>
-      </li>
-      <li Class="PatchOperationInsert">
-        <order>Append</order>
-        <xpath>Defs/CultureDef/styleItemTags/li[last()]</xpath>
-        <value>
-          <li>
-            <tag>TattooRJWCrest</tag>
-            <baseWeight>0.01</baseWeight>
-            <weightFactor>1</weightFactor>
+
+      <li Class="PatchOperationSequence">
+        <success>Always</success>
+        <operations>
+          <li Class="PatchOperationTest">
+            <success>Invert</success>
+            <xpath>Defs/CultureDef/styleItemTags/li[tag='TattooRJWCrest']</xpath>
           </li>
+          <li Class="PatchOperationInsert">
+            <order>Append</order>
+            <xpath>Defs/CultureDef/styleItemTags/li[last()]</xpath>
+            <value>
+              <li>
+                <tag>TattooRJWCrest</tag>
+                <baseWeight>0.01</baseWeight>
+                <weightFactor>1</weightFactor>
+              </li>
+            </value>
+          </li>
+        </operations>
+      </li>
+
+      <li Class="PatchOperationAdd">
+        <success>Always</success>
+        <xpath>Defs/CultureDef[not(styleItemTags)]</xpath>
+        <value>
+          <styleItemTags>
+            <li>
+              <tag>TattooRJWCrest</tag>
+              <baseWeight>0.01</baseWeight>
+              <weightFactor>1</weightFactor>
+            </li>
+          </styleItemTags>
         </value>
       </li>
-    </operations>
-  </Operation>
 
-  <Operation Class="PatchOperationAdd">
-    <success>Always</success>
-    <xpath>Defs/CultureDef[not(styleItemTags)]</xpath>
-    <value>
-      <styleItemTags>
-        <li>
-          <tag>TattooRJWCrest</tag>
-          <baseWeight>0.01</baseWeight>
-          <weightFactor>1</weightFactor>
-        </li>
-      </styleItemTags>
-    </value>
-  </Operation>
-
-  <Operation Class="PatchOperationSequence">
-    <success>Always</success>
-    <operations>
-      <li Class="PatchOperationTest">
-        <success>Invert</success>
-        <xpath>Defs/MemeDef/styleItemTags/li[tag='TattooRJWCrest']</xpath>
-      </li>
-      <li Class="PatchOperationInsert">
-        <order>Append</order>
-        <xpath>Defs/MemeDef/styleItemTags/li[last()]</xpath>
-        <value>
-          <li>
-            <tag>TattooRJWCrest</tag>
-            <baseWeight>0.01</baseWeight>
-            <weightFactor>1</weightFactor>
+      <li Class="PatchOperationSequence">
+        <success>Always</success>
+        <operations>
+          <li Class="PatchOperationTest">
+            <success>Invert</success>
+            <xpath>Defs/MemeDef/styleItemTags/li[tag='TattooRJWCrest']</xpath>
           </li>
+          <li Class="PatchOperationInsert">
+            <order>Append</order>
+            <xpath>Defs/MemeDef/styleItemTags/li[last()]</xpath>
+            <value>
+              <li>
+                <tag>TattooRJWCrest</tag>
+                <baseWeight>0.01</baseWeight>
+                <weightFactor>1</weightFactor>
+              </li>
+            </value>
+          </li>
+        </operations>
+      </li>
+
+      <li Class="PatchOperationAdd">
+        <success>Always</success>
+        <xpath>Defs/MemeDef[not(styleItemTags)]</xpath>
+        <value>
+          <styleItemTags>
+            <li>
+              <tag>TattooRJWCrest</tag>
+              <baseWeight>0.01</baseWeight>
+              <weightFactor>1</weightFactor>
+            </li>
+          </styleItemTags>
         </value>
       </li>
-    </operations>
-  </Operation>
 
-  <Operation Class="PatchOperationAdd">
-    <success>Always</success>
-    <xpath>Defs/MemeDef[not(styleItemTags)]</xpath>
-    <value>
-      <styleItemTags>
-        <li>
-          <tag>TattooRJWCrest</tag>
-          <baseWeight>0.01</baseWeight>
-          <weightFactor>1</weightFactor>
-        </li>
-      </styleItemTags>
-    </value>
+    </operations>
   </Operation>
 </Patch>
